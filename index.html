@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube homepage</title>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Sacramento&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="../youtube-exercise/css/style.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="" alt="youtube logo">
-                </div>
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>
+    <header class="header">
+        <div class="header_start">
+            <a class="btn_def" href="#" onClick="handleClick('cookie')"><i class="material-icons">menu</i></a>
+            <a href="#">
+                <img class="header_logo" src="imgs/YouTube_logo.png" alt="Youtube Logo">
+            </a>
+        </div>
+        <div class="search_box">
+            <input class="search_input" type="text" placeholder="Search..">
+            <button class="btn_search" type="submit">
+                <i class="material-icons">search</i>
+            </button>
+        </div>
+        <div class="header_end">
+            <a class="btn_def btn_more" href="#" onClick="handleClick('wurstel', 2)"><i class="material-icons">more_vert</i></a>
+            <a class="btn_def btn_accedi" href="#">
+                <span class="material-icons-outlined">person</span>
+                <span>Accedi</span>
+            </a>
         </div>
     </header>
+
+    <main>
+
+    </main>
+
+
+
+<script type="text/javascript">
+
+    let start = 0;
+
+    function handleClick(x, numero){
+        //console.log('hello world');
+        
+        let sum = start++ ;
+        console.log(x, sum)
+
+
+    }
+
+
+</script>
+
 </body>
+
 </html>
